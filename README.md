@@ -143,11 +143,12 @@ singularity exec -B  $(pwd):/INPUT /path/of/the/container/imagename.sif  <your p
 
 For Example
 
-
+```
 singularity exec -B  $(pwd):/INPUT /home/bayram/Gwas/imagename.sif  /plink   --bfile  1kg_EU_qc\
  --pheno BMI_pheno.txt \
  --make-bed --out 1kg_EU_BMI 
-
+```
+Then
 
 ```
 singularity exec -B  $(pwd):/INPUT /home/bayram/Gwas/imagename.sif  /plink    	 --bfile 1kg_EU_BMI \
